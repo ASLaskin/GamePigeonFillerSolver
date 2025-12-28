@@ -1,9 +1,8 @@
-from player import Player
 import copy
 
 class Game:
     directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
-    def __init__(self, grid, turn: int , me: Player, opponent: Player):
+    def __init__(self, grid, turn: int , me, opponent):
         self.grid = grid
         self.rows = len(grid)
         self.cols = len(grid[0])
