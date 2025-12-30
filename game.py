@@ -63,7 +63,6 @@ class Game:
 
                 player.captured.add((nx,ny))
                 new_captured.add((nx,ny))
-                queue.append((nx,ny))
 
         new_frontier = set()
         for pos in player.captured:
